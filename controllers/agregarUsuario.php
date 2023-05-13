@@ -65,7 +65,9 @@ $usuarios = $usuario->obtenerTodos();
                     <td><?php echo $usuario['mensaje']; ?></td>
                     <td>
                         <a href="editarUsuario.php?id=<?php echo $usuario['id']; ?>">Editar</a>
-                        <a href="/views/eliminar.php?id=<?php echo $usuario['id']; ?>">Eliminar</a>
+                        <a href="eliminarUsuario.php?id=<?php echo $usuario['id']; ?>">Eliminar</a>
+                        <a href="verUsuario.php?id=<?php echo $usuario['id']; ?>">Ver detalles</a>
+
                     </td>
                     </tr>
                     <?php endforeach; ?>
@@ -73,8 +75,8 @@ $usuarios = $usuario->obtenerTodos();
             </table>
         </div>
          <div class="d-flex justify-content-center">
-            <a href='insertarUsuario.php' class='btn btn-info'>Agregar</a>
-            <button onclick="window.location.reload() class='btn btn-info'">Actualizar</button>
+            <a href='insertarUsuario.php' class='btn btn-primary'>Agregar</a>
+            <button onclick="window.location.reload() class='btn btn-primary'">Actualizar</button>
         </div>
 
 	        <!-- Scripts de Bootstrap -->

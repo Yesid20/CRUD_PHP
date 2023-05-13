@@ -13,11 +13,12 @@
 
     <p>¿Está seguro de que desea eliminar este usuario?</p>
 
-    <form method="POST" action="index.php?action=eliminar&id=<?php echo $id; ?>">
+    <form method="POST" action="/mvc/controllers/eliminarUsuario.php?action=eliminar&id=<?php echo $id; ?>">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
-        <input type="submit" value="Eliminar">
+        <button type="submit" value="Eliminar">Eliminar</button>
         <a class="btn btn-danger" href="index.php?action=listar" class="btn btn-secondary ml-2">Cancelar</a>
+        <a href="/mvc/controllers/agregarUsuario.php" type="submit" value="Eliminar">Volver</a>
 
     </form>
-</body>
+</body>     
 </html>

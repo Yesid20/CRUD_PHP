@@ -30,3 +30,6 @@ if ($filas_afectadas > 0) {
     echo "Ha ocurrido un error al eliminar el usuario.";
 }
 ?>
+
+
+<a href="agregarUsuario.php" type="submit" value="Regresar">Volver</a>
